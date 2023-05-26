@@ -1,0 +1,1263 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#Webicon{
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgb(0, 0, 0);
+}
+strong{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.teaching{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 0 10px 15px rgb(44, 43, 42);
+    border-radius: 150px;
+    cursor: pointer;
+}
+.teaching:hover{
+    box-shadow: none;
+    transition: 0.1s cubic-bezier(0.05,0.61,0.41,0.59);
+}
+.teaching img{
+    width: 40px;
+}
+.Curtain{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+.Curtain.active{
+    display:block;
+}
+.TeachingPicture{
+    position: fixed;
+    width: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.TeachingPicture.active{
+    display: block;
+}
+.TeachingPicture img{
+    filter: saturate(0.5);
+    width: 100%;
+}
+
+.TeachingPicture .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.962);
+    text-shadow: 2px 5px 5px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.TeachingPicture .close-btn:hover{
+    transition: 0.3s cubic-bezier(0.05,0.61,0.41,0.59);
+    color: rgba(79, 79, 79, 0.962);
+    text-shadow: none;
+}
+
+
+.page1{
+    background-image: url(picture\ for\ BEAST/HomeBG.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+@media (max-width:760px){
+    .page1{
+        background-image: url(picture\ for\ BEAST/HomeSecond.jpg);
+    }
+}
+.page2{
+    background-image: url(picture\ for\ BEAST/libraryBG.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top,left;
+}
+.page3{
+    background-image: url(picture\ for\ BEAST/AboutBG.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top,left;
+    background-color: rgba(241, 211, 211, 0.5);
+}
+ul li{
+    list-style-type:none;
+}
+/*navigation!*/
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80px;
+    background-repeat: no-repeat;
+    z-index: 999;
+}
+.page1 .navigation{
+    background-image: url(picture\ for\ BEAST/1+2banner.png);
+    background-size: 100% auto;
+    background-position:  right;
+
+}
+.page1 .navigation a{
+    display: block;
+    text-shadow: 10px 10px 10px rgb(197, 165, 69);;
+    color: #f6fd32;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.page1 .navigation a:hover{
+    color: #a88d3f;
+    text-shadow: none;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.465, 1);
+    text-decoration: underline;
+}
+
+.page2 .navigation a{
+    display: block;
+    text-shadow: 10px 10px 10px rgb(93, 86, 67);;
+    color: #c1a586;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.page2 .navigation a:hover{
+    color: #664824;
+    text-shadow: none;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.465, 1);
+    text-decoration: underline;
+}
+.page2 .navigation{
+    background-image: url(picture\ for\ BEAST/1+2banner.png);
+    background-size: cover;
+    background-color: rgba(195, 184, 184, 0.9);
+    background-position :center;
+}
+.page3 .navigation a{
+    display: block;
+    text-shadow: 10px 10px 10px rgb(93, 86, 67);;
+    color: #bb864d;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.page3 .navigation a:hover{
+    color: #876133;
+    text-shadow: none;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.465, 1);
+    text-decoration: underline;
+}
+.page3 .navigation{
+    background-image: url(picture\ for\ BEAST/3banner.png);
+    background-size: 100% auto;
+    background-color: rgba(207, 194, 184, 0.9);
+    background-position :center;
+}
+
+.page4 .navigation a{
+    display: block;
+    text-shadow: 10px 10px 10px rgb(93, 86, 67);;
+    color: #f8c68d;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.page4 .navigation a:hover{
+    color: #664824;
+    text-shadow: none;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.465, 1);
+    text-decoration: underline;
+}
+.page4 .navigation{
+    background-image: url(picture\ for\ BEAST/1+2banner.png);
+    background-size: cover;
+    background-color: rgba(195, 184, 184, 0.9);
+    background-position :center;
+}
+.page5  .navigation{
+    
+    background-image: url(picture\ for\ BEAST/5banner.jpg);
+    background-size: 100% ;
+    background-color: rgba(255, 241, 207, 0.4);
+    background-position :center ;
+}
+.page5 .navigation a{
+    display: block;
+    text-shadow: 10px 10px 10px rgb(98, 84, 77);;
+    color: #d78237;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.page5 .navigation a:hover{
+    color: #a45a29;
+    text-shadow: none;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.465, 1);
+    text-decoration: underline;
+}
+.page6  .navigation{
+    background-image: url(picture\ for\ BEAST/6banner.png);
+    background-size: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-position :center -50px;
+}
+.page6 .navigation a{
+    display: block;
+    text-shadow: 10px 10px 10px rgb(39, 40, 38);;
+    color: #94dd7e;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.page6 .navigation a:hover{
+    color: #498d37;
+    text-shadow: none;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.465, 1);
+    text-decoration: underline;
+}
+.page7  .navigation{
+    
+    background-image: url(picture\ for\ BEAST/7banner.webp);
+    background-size: 100% auto;
+    background-color: rgba(243, 168, 82, 0.5);
+    background-position :center -170px;
+}
+.page7 .navigation a{
+    display: block;
+    text-shadow: 10px 10px 10px #b89f72;;
+    color: #be8065;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.page7 .navigation a:hover{
+    color: rgb(169, 116, 77);
+    text-shadow: none;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.465, 1);
+    text-decoration: underline;
+}
+.navigation ul{
+    margin-right: 10px;
+    max-height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation ul li a{
+    align-items: center;/*item in*/
+    float: left;
+}
+.navigation a img{
+    width: 50px;
+}
+.navigation a{
+    float: left;
+    margin-top: 20px;
+    
+}
+/*SubNavigation*/
+.SubNavigation{
+    z-index: 999;
+    display: flex;
+    position: fixed;
+    margin-top: 80px;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    filter: saturate(0.2);
+}
+.page4 .SubNavigation{
+    background-color: rgba(255, 209, 116, 0.95);
+}
+.page5 .SubNavigation{
+    background-color: rgba(255, 214, 174, 0.5);
+}
+.page6 .SubNavigation{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.page7 .SubNavigation{
+    background-color: rgba(255, 248, 236, 0.5);
+}
+.SubNavigation ul{
+    width: 80%;
+}
+.SubNavigation>ul>li{
+    float: left;
+    
+}
+.SubNavigation ul{
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+.SubNavigation>ul>li{
+    float: left;
+}
+.page4 .SubNavigation h2{
+    font-size:160% ;
+    color: #ba752f;
+    text-shadow: 0px 5px 5px rgb(163, 142, 100);
+}
+.page4 .SubNavigation h2:hover{
+    text-decoration:underline;
+    text-shadow: none;
+    font-size:160% ;
+    color: #6a563e;
+
+}
+.page5 .SubNavigation h2{
+    font-size:160% ;
+    color: #cd810f;
+    text-shadow: 0px 5px 5px rgb(218, 131, 64);
+}
+.page5 .SubNavigation h2:hover{
+    text-decoration:underline;
+    text-shadow: none;
+    font-size:160% ;
+    color: #8b4601;
+}
+.page6 .SubNavigation h2{
+    font-size:160% ;
+    color: #ba752f;
+    text-shadow: 0px 5px 5px rgb(163, 142, 100);
+}
+.page6 .SubNavigation h2:hover{
+    text-decoration:underline;
+    text-shadow: none;
+    font-size:160% ;
+    color: #6a563e;
+}
+.page7 .SubNavigation h2{
+    font-size:160% ;
+    color: #c29966;
+    text-shadow: 0px 5px 5px rgb(243, 171, 3);
+}
+.page7 .SubNavigation h2:hover{
+    text-decoration:underline;
+    text-shadow: none;
+    font-size:160% ;
+    color: #7d4803;
+}
+/*Maincontain*/
+.MainContent{
+    padding-top: 120px;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.MainLeft{
+    float: left;
+    width: 70%;
+}
+.MainLeft ul{
+    margin-top: 100px;
+    text-align: center;
+
+}
+.MainLeft ul li img{
+    animation: Iconsimage 2s linear infinite;
+}
+@keyframes Iconsimage{
+    0%{
+        transform: rotate(360deg);
+    }
+}
+.MainLeft ul li img:hover{
+    animation: none;
+}
+
+.MainRight{
+    float: left;
+    width: 30%;
+}
+@media (max-width:760px){
+    
+    .MainContent{
+        flex-direction: column;
+    }
+    .MainLeft,
+    .MainRight{
+        width: 100%;
+    }
+}
+.MainRight ul{
+    margin-top: 100px;
+}
+.MainRight ul li{
+    margin-top: 20px;
+}
+
+.MainRight ul li h3::after{
+    content: " THE FOUR DIVINE BEAST?";
+    font-size: 20px;
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.Media{
+    margin-top: 500px;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+@media (max-width:760px){
+    .MainRight ul{
+        margin-top: 40px;
+    }
+    .Media img{
+        height: 60px;
+    }
+
+}
+.Media .Mediaicon{
+    display: flex;
+    width: 30%;
+    max-height: 100%;
+    align-items: center;
+}
+.Media .Mediaicon img{
+    width: 100%;
+    max-height: auto;
+}
+
+
+/*library container*/
+.LibraryMain{
+    padding-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.CardTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.CardLIBRARY {
+
+    display: flex;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.CardLIBRARY .card{
+    position: relative;
+    width: 15%;
+    height:500px;
+    margin: 5px;   
+    cursor: pointer;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    /*Transition effect*/
+    transition: 0.5s cubic-bezier(0.05,0.61,0.41,0.59);
+    overflow: hidden;
+}
+.CardLIBRARY .card:nth-child(1){
+    background-image: url(picture\ for\ BEAST/DragonCard.jpg);
+}
+.CardLIBRARY .card:nth-child(2){
+    background-image: url(picture\ for\ BEAST/TigerCard.jpg);
+}
+.CardLIBRARY .card:nth-child(3){
+    background-image: url(picture\ for\ BEAST/PhoenixCard.jpg);
+}
+.CardLIBRARY .card:nth-child(4){
+    background-image: url(picture\ for\ BEAST/TurtleCard.jpeg);
+}
+
+.CardLIBRARY .content{
+    display: flex;
+    position: absolute;
+    bottom: 120px;
+    left: -50%;
+    width: 300px;
+    height: 100px;
+    transition: 0.5s cubic-bezier(0.05,0.61,0.41,0.59);
+    justify-content: center;
+    flex-direction: column;
+    transform: rotate(-90deg);
+}
+.card.active .content{
+    bottom: 20px;
+    left: 10px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    width: fit-content;
+    height: 100px;
+    transition: 0.1s cubic-bezier(0.05,0.61,0.41,0.59);
+    justify-content: center;
+    flex-direction: column;
+    transform: rotate(0deg);
+    
+}
+.card .content p:nth-child(1){
+    font-weight: bold;
+    font-size: 30px;
+    color: #b0c5c5;
+    
+}
+.card .content p:nth-child(2){
+    font-weight:lighter;
+    font-size: 15px;
+    color: #a8b9b9;
+    
+} 
+    /*if card be selected*/
+.card.active{
+    flex: 0.5;
+    margin: 0;
+    border-radius: 0.5s;
+
+}
+
+
+
+.CardIntroduction{
+    display: inline-block;
+    box-shadow: 0 10px 15px rgb(0, 0, 0);
+    width: 80%;
+    border-radius: 30px;
+    margin: 20px auto;
+    background-image: linear-gradient( to bottom,rgb(235, 232, 227),rgb(155, 131, 105),rgb(142, 125, 105),rgb(122, 103, 81));
+}
+
+.CardIntroduction h1{
+    padding-top: 10px;
+    padding-left: 20px;
+    color: rgb(142, 132, 119);
+    
+}
+
+.CardIntroduction p{
+    padding: 20px;
+    font-size: 20px;
+}
+/*Page About*/
+.AboutMain{
+    padding-top: 120px;
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;  
+}
+.AboutLeft{
+    display: flex;
+    flex-direction: column;
+    width:55%;    
+    align-items: center;
+    justify-content: center;
+}
+.AboutRight{
+    display: flex;
+    width:45%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width:760px){
+    
+    .AboutMain{
+        flex-direction: column;
+    }
+    .AboutLeft,
+    .AboutRight{
+        width: 100%;
+    }
+}
+.AboutRight img{
+    margin-top: 100px;
+    border: 2px solid rgb(255, 198, 76);
+    border-radius: 30px;
+   
+}
+.AboutMain h1,
+.AnoutMain h2{
+   font-size: 40px;
+   font-weight: bolder;
+   color: #9a21db;
+
+}
+.AboutMain p,strong{
+    color: #d7a4ef;
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 80%;
+    font-weight: bolder;
+}
+.AboutLeft strong{
+    color: #9a21db;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+/*Turtle Page Details*/
+
+    /*FOUR PAGE*/
+.FourMain{
+    padding-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+.page4 .FourMain{
+    background-image: url(picture\ for\ BEAST/page4main.webp);
+    background-size: 100% auto;
+    background-position: bottom -30px right 100px ;
+    background-color: rgb(249, 229, 205);
+}
+.page5 .FourMain{
+    background-image: url(picture\ for\ BEAST/page5main.png);
+    background-size: 100% 100%;
+    background-position:top ;
+    background-color: rgb(239, 240, 211);
+}
+.page6 .FourMain{
+    background-image: url(picture\ for\ BEAST/page6main.webp);
+    background-size: 100% auto;
+    background-position: bottom  right 0px ;
+    background-color: rgba(179, 171, 124, 0.639);
+}
+.page7 .FourMain{
+    background-image: url(picture\ for\ BEAST/page7main.webp);
+    background-size: 70% auto;
+    background-position: bottom  right  ;
+    background-color: rgb(249, 233, 206);
+}
+
+.begining{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    background-repeat: no-repeat;
+}
+        /*page1 Begining*/
+.page4 .begining{
+    background-image: url(picture\ for\ BEAST/WinterBackground1.png);
+    background-size: 100% auto;/*width=container highly adaptive*/
+    background-position: bottom ;/*A;ign with the bottom of the container*/
+    height: 800px;/*Hight of container*/ 
+}
+
+.page5 .begining{
+    background-image: url(picture\ for\ BEAST/Autumn.webp);
+    background-size: auto 110%;/*width=container highly adaptive*/
+    background-position: top right ;/*A;ign with the bottom of the container*/
+    height: 800px;/*Hight of container*/
+}
+.page6 .begining{
+    background-image: url(picture\ for\ BEAST/SpringBG.jpg);
+    background-size: 100% auto;/*width=container highly adaptive*/
+    background-position: center ;/*A;ign with the bottom of the container*/
+    height: 800px;/*Hight of container*/
+}
+.page7 .begining{
+    background-image: url(picture\ for\ BEAST/SummerBG.jpg);
+    background-size: 100% auto;/*width=container highly adaptive*/
+    background-position: bottom ;/*A;ign with the bottom of the container*/
+    height: 800px;/*Hight of container*/
+}
+
+.begining .SeasonIcon{
+    width: 20%;
+}
+
+.begining .SeasonIcon img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.begining .BeginingList{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    width:60%;
+    background-image: url(picture\ for\ BEAST/BeginingList.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.BeginingList ul{
+    
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.BeginingList ul li{
+    font-size: larger;
+    font-weight: bolder;
+}
+.BeginingList ul li a{
+    text-decoration: underline;
+    font-size: 30px;
+    color: #675950;
+    text-shadow: 5px 5px 5px rgb(150, 119, 85);
+}
+.BeginingList ul li a:hover{
+    transition: 0.3s cubic-bezier(0.05,0.61,0.41,0.59);
+    color: rgba(76, 71, 65, 0.962);
+    text-shadow: none;
+}
+
+        /*page2 Introduction*/
+
+.Intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: 100% auto;/*width=container highly adaptive*/
+    background-position: top  ;/*A;ign with the bottom of the container*/
+    height: 800px;
+    width: 80%; 
+}
+.page4 .Intro{
+    background-size: 100% auto;
+    background-position: top  ;
+    background-image: url(picture\ for\ BEAST/page4BG2.webp);
+}
+.page5 .Intro{
+    background-size: 100% auto;
+    background-position: center ;
+    background-image: url(picture\ for\ BEAST/page5BG2.png);
+}
+.page6 .Intro{
+    background-size: 100% auto;
+    background-position: top center;
+    background-image: url(picture\ for\ BEAST/page6BG2.jpg);
+}
+.page7 .Intro{
+    background-size: 100% auto;
+    background-position: top;
+    background-image: url(picture\ for\ BEAST/page7BG2.png);
+}
+
+.Intro .title{
+    margin-top: 5%;
+    display:inline-block;
+    max-width: 60%;
+    padding: 2%;
+    border-radius: 10px ;
+}
+.page4 .Intro .title{
+    border: 2px solid rgb(229, 192, 144);
+    background-color: rgb(243, 229, 217); 
+}
+.page7 .Intro .title{
+    background-image: linear-gradient( to top,rgb(200, 170, 117),rgb(199, 218, 197),rgb(196, 189, 176),rgb(175, 208, 222),rgb(74, 101, 117));
+}
+.page6 .Intro .title{
+    background-image: linear-gradient( to top,rgb(208, 183, 175),rgb(232, 203, 186),rgb(224, 206, 173),rgb(213, 182, 124),rgb(144, 177, 108));
+
+}
+.page5 .Intro .title{
+    background-image: linear-gradient( to top,rgb(133, 123, 105),rgb(210, 199, 134),rgb(89, 177, 163),rgb(83, 146, 135));
+}
+
+.Intro .content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.Intro .content .text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+.Intro .content .text h2{
+    text-decoration-line: underline;
+    text-decoration-style:double;
+    font-size: 30px;
+    margin-top: 20%;
+}
+.page4 .Intro .content .text h2{
+    color: #6c6358;
+}
+.page5 .Intro .content .text h2{
+    color: #ffffff;
+}
+.page6 .Intro .content .text h2{
+    color: #4d9c45;
+   
+}
+.page7 .Intro .content .text h2{
+    color: #e77142;
+}
+.Intro .content .text p{
+    margin-top: 2%;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 90%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.page4 .Intro .content .text p{
+    color: #492d07;
+}
+.page5 .Intro .content .text p{
+    color: #472d0d;
+}
+.page6 .Intro .content .text p{
+    color: #d2ffbd;
+}
+.page7 .Intro .content .text p{
+    color: #ea895f;
+}
+.Intro .content .ImageShell{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -10%;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+}
+@media (max-width:900px){
+    .Intro{
+        background-image: url(picture\ for\ BEAST/page4BG2.webp),url(picture\ for\ BEAST/Turtleintro2.webp);
+        background-position: top,bottom;
+        height: 1000px;
+    }
+    .Intro .content{
+        flex-direction: column;
+    }
+    .Intro .content .text{
+        width: 100%;
+        height: 30%;
+    }
+    .Intro .content .ImageShell{
+        width: 100%;
+        height: 70%;
+        margin-top: -20%;
+    }
+    .Intro .content .text h2{
+        margin-top: 10px;
+    }
+}
+.Intro .content .ImageShell .images{
+    width: 300%;
+    height: 50%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition:  .2s;
+}
+.Intro .content .ImageShell .images .img{
+    width: 100%;
+    background-size: cover;
+    border:2px rgb(238, 232, 205) solid ;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px  rgb(173, 156, 136);
+}
+.page4 .Intro .content .ImageShell .images .img:nth-child(1){
+    background-image: url(picture\ for\ BEAST/Turtle1.jpg);
+}
+.page4 .Intro .content .ImageShell .images .img:nth-child(2){
+    background-image: url(picture\ for\ BEAST/Turtle2.jpg);
+}
+.page4 .Intro .content .ImageShell .images .img:nth-child(3){
+    background-image: url(picture\ for\ BEAST/Turtle3.jpg);
+}
+.page5 .Intro .content .ImageShell .images .img:nth-child(1){
+    background-image: url(picture\ for\ BEAST/Tiger1.jpg);
+}
+.page5 .Intro .content .ImageShell .images .img:nth-child(2){
+    background-image: url(picture\ for\ BEAST/Tiger2.jpg);
+}
+.page5 .Intro .content .ImageShell .images .img:nth-child(3){
+    background-image: url(picture\ for\ BEAST/Tiger3.jpg);
+}
+.page6 .Intro .content .ImageShell .images .img:nth-child(1){
+    background-image: url(picture\ for\ BEAST/Dragon1.jpg);
+}
+.page6 .Intro .content .ImageShell .images .img:nth-child(2){
+    background-image: url(picture\ for\ BEAST/Dragon2.jpg);
+}
+.page6 .Intro .content .ImageShell .images .img:nth-child(3){
+    background-image: url(picture\ for\ BEAST/Dragon3.jpg);
+}
+.page7 .Intro .content .ImageShell .images .img:nth-child(1){
+    background-image: url(picture\ for\ BEAST/Phoenix1.jpg);
+}
+.page7 .Intro .content .ImageShell .images .img:nth-child(2){
+    background-image: url(picture\ for\ BEAST/Phoenix2.jpg);
+}
+.page7 .Intro .content .ImageShell .images .img:nth-child(3){
+    background-image: url(picture\ for\ BEAST/Phoenix3.jpg);
+}
+.Intro .content .ImageShell .min-images{
+    width: 30%;
+    bottom: 10%;
+    display:flex;
+    justify-content: space-evenly;
+    position: absolute;
+}
+                /*little images*/
+.Intro .content .ImageShell .min-images .min{
+    /*size for little images*/
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-size: cover;
+    border: solid 2px honeydew;
+    background-position: -20px 0;
+}
+.page4 .Intro .content .ImageShell .min-images .min:nth-child(1){
+    background-image: url(picture\ for\ BEAST/Turtle1.jpg);
+}
+.page4 .Intro .content .ImageShell .min-images .min:nth-child(2){
+    background-image: url(picture\ for\ BEAST/Turtle2.jpg);
+}
+.page4 .Intro .content .ImageShell .min-images .min:nth-child(3){
+    background-image: url(picture\ for\ BEAST/Turtle3.jpg);
+}
+.page5 .Intro .content .ImageShell .min-images .min:nth-child(1){
+    background-image: url(picture\ for\ BEAST/Dragon1.jpg);
+}
+.page5 .Intro .content .ImageShell .min-images .min:nth-child(2){
+    background-image: url(picture\ for\ BEAST/Dragon2.jpg);
+}
+.page5 .Intro .content .ImageShell .min-images .min:nth-child(3){
+    background-image: url(picture\ for\ BEAST/Dragon3.jpg);
+}
+.page6 .Intro .content .ImageShell .min-images .min:nth-child(1){
+    background-image: url(picture\ for\ BEAST/Tiger1.jpg);
+}
+.page6 .Intro .content .ImageShell .min-images .min:nth-child(2){
+    background-image: url(picture\ for\ BEAST/Tiger2.jpg);
+}
+.page6 .Intro .content .ImageShell .min-images .min:nth-child(3){
+    background-image: url(picture\ for\ BEAST/Tiger3.jpg);
+}
+.page7 .Intro .content .ImageShell .min-images .min:nth-child(1){
+    background-image: url(picture\ for\ BEAST/Phoenix1.jpg);
+}
+.page7 .Intro .content .ImageShell .min-images .min:nth-child(2){
+    background-image: url(picture\ for\ BEAST/Phoenix2.jpg);
+}
+.page7 .Intro .content .ImageShell .min-images .min:nth-child(3){
+    background-image: url(picture\ for\ BEAST/Phoenix3.jpg);
+}
+                /*Buttons*/
+.Intro .content .ImageShell .button{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;/*user can no copt the text,because buttons are not text*/
+}                
+.Intro .content .ImageShell .button .button-left,
+.Intro .content .ImageShell .button .button-right{
+    font-size: 200%;
+    background-color:rgba(225, 214, 214, 0.5) ;
+    cursor: pointer;
+    color: rgb(251, 228, 144);
+}
+.Intro .content .ImageShell .button .button-left:hover{
+    background-color:rgba(242, 235, 235, 0.814);
+    color: #5c5848;
+}
+.Intro .content .ImageShell .button .button-right:hover{
+    background-color:rgba(242, 235, 235, 0.814);
+    color: #5c5848;
+}
+.amplify{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 5%;
+    right: 5%;
+    position: absolute;
+    height: 10%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+}
+.amplify h2{
+    font-size: 16px;
+    color: rgb(155, 123, 63);
+}
+.amplify:hover{
+    box-shadow:none;
+    transition: 1s cubic-bezier(0.05,0.61,0.41,0.59);
+
+}
+.page4 .amplify:hover{
+    background-color: rgb(155, 147, 139);
+}
+.page5 .amplify:hover{
+    background-color: rgb(106, 204, 178);
+}
+.page6 .amplify:hover{
+    background-color: rgb(205, 250, 184);
+}
+.page7 .amplify:hover{
+    background-color: rgb(228, 183, 153);
+}
+
+
+        /*Page3-ARCHEAOLOGY*/
+.Archea{
+    width: 1000px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    background-repeat: no-repeat;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.page4 .Archea{
+    background-image: url(picture\ for\ BEAST/TurtlePage3Background.png),url(picture\ for\ BEAST/TurtlePage3.2Background.png),url(picture\ for\ BEAST/TurtlePage3.3Background.webp);
+    background-size: 100% auto;
+    background-position: top right,center,bottom;
+}
+.page5 .Archea{
+    background-image: url(picture\ for\ BEAST);
+    background-size: 100% auto;
+    background-position: top;
+}
+.page6 .Archea{
+    background-image: url(picture\ for\ BEAST/page6AR1.png),url(picture\ for\ BEAST/page6AR2.png
+    ),url(picture\ for\ BEAST/page6AR3.png);
+    background-size: 100% auto,100% auto,100% auto;
+    background-position: top right,center left,bottom left;
+}
+.page7 .Archea{
+    background-image: url(picture\ for\ BEAST/page7AR1.png),url(picture\ for\ BEAST/page7AR2.webp),url(picture\ for\ BEAST/page7AR3.webp);
+    background-size: 50% auto,60%,80% auto;
+    background-position: top right,top 600px right,bottom 500px left;
+}
+.Archea .title{
+    display:inline-block;
+    max-width: 60%;
+    padding: 2%;
+    border-radius: 10px ;
+    background:radial-gradient(circle at center,rgb(89, 89, 95),rgb(189, 189, 162));
+    box-shadow: 10px 10px 10px rgb(108, 104, 100);
+}
+.Archea .title h1{
+    color: #4b3629;
+}
+.Archea .time-axis{
+    width: 100%;
+    height: 100%;
+}
+.time-axis .Timebox{
+    width: 498px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.time-axis .Timetitle{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 498px;
+    height: 200px;
+}
+
+.time-axis .Timetitle .Titlecontent{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    background-color: aquamarine;
+    display:inline-block;
+    padding: 10px;
+    display:inline-block;
+    position: absolute;
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
+}
+.Timeleft .Titlecontent{
+    right: 16px;
+    background-image: linear-gradient( to right,rgb(235, 232, 227),rgb(235, 232, 227),rgb(235, 232, 227),rgb(196, 189, 176),rgb(183, 172, 152),rgb(57, 56, 56));
+}
+.Timeright .Titlecontent{
+    left: 16px;
+    background-image: linear-gradient( to left,rgb(235, 232, 227),rgb(235, 232, 227),rgb(235, 232, 227),rgb(196, 189, 176),rgb(183, 172, 152),rgb(57, 56, 56));
+}
+
+.time-axis .Timeleft{
+    float: left;
+    border-right:4px solid rgb(171, 161, 161);
+}
+.time-axis .Timeright{
+    float: right;
+    border-left:4px solid rgb(171, 161, 161);
+}
+@media (max-width:1000px){
+    .time-axis .Timeleft{
+        border-right:none;
+    }
+    .time-axis .dot{
+        opacity: 0;
+    }
+    .time-axis .Timetitle{
+        
+    }
+    .time-axis .Timeright{
+        border-left: none;
+    }
+
+}
+
+.Timeleft .dot{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(130, 115, 115);
+    display: block;
+    border-radius: 50%;
+    background-color: rgb(146, 129, 129);
+    right: -9px;
+    
+}
+
+.Timeright .dot{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(130, 115, 115);
+    display: block;
+    border-radius: 50%;
+    background-color: rgb(146, 129, 129);
+    left: -9px;
+}
+
+.Timeleft .arrow {/*box containing arrow,width =110% of container*/
+    position: absolute;
+    width: 10%;
+    right: -3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+   
+}
+.Timeright .arrow{
+    position: absolute;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -3%;
+    opacity: 0.5;
+}
+.time-axis .arrow img {/*picture of arrow*/
+    width: 100%;
+}
+
+                            /*   normal and Over!*/
+.Timeleft.Normalsize  .antique{/*right antique*/
+    display:inline-block;
+    position: absolute;
+    right: 16px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: 100%;
+    padding: 4px;
+    background-image: linear-gradient( to right,rgb(235, 232, 227),rgb(235, 232, 227),rgb(235, 232, 227),rgb(196, 189, 176),rgb(183, 172, 152),rgb(90, 88, 83));
+}
+.Timeleft.Overhight  .antique{/*right antique*/
+    display:inline-block;
+    position: absolute;
+    right: 16px;
+    border-radius: 10px;
+    width: 100%;
+    max-height: 100%;
+    padding: 4px;
+    background-image: linear-gradient( to right,rgb(235, 232, 227),rgb(235, 232, 227),rgb(235, 232, 227),rgb(196, 189, 176),rgb(183, 172, 152),rgb(90, 88, 83));
+}
+.Timeright.Normalsize .antique{/*right antique*/
+    display:inline-block;
+    position: absolute;
+    border-radius: 10px;
+    max-width: 100%;
+    height: 100%;
+    padding: 4px;
+    left: 16px;
+    background-image: linear-gradient( to left,rgb(235, 232, 227),rgb(235, 232, 227),rgb(235, 232, 227),rgb(196, 189, 176),rgb(183, 172, 152),rgb(90, 88, 83));
+    
+}
+.time-axis  .antique{/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%id and class ca%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+    overflow: hidden;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.5);
+}
+.time-axis  .antique:hover{
+    cursor: crosshair;
+    box-shadow: none;
+    transition: 2s cubic-bezier(0.05,0.61,0.41,0.59);
+
+}
+.Timeleft.Normalsize .antique  img{
+    float: right;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    border-radius: 8px;
+    width: auto;
+    max-height: 100%;
+}
+
+.Timeright.Normalsize .antique  img{
+    
+    float: left;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    border-radius: 8px;
+    width: auto;
+    max-height: 100%;
+    background-color: rgb(108, 130, 123);
+}
+
+.Overhight .antique img{
+    width: 100%;
+    max-height: auto;
+}
+
+.antiquePic[zoomed]{
+    /*background-size:900px 900px;*/
+    transform: scale(3) ;
+    transform-origin: calc(var(--x)*100%*3) calc(var(--y)*100%*3);/*half of day!!!!*/
+    
+
+}
+
+
+.FOOTER{
+    height: 800px;
+    width: 80%;
+    
+    
+}
